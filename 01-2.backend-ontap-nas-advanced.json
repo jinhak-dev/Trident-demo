@@ -1,0 +1,18 @@
+{
+    "version": 1,
+    "storageDriverName": "ontap-nas",
+    "backendName": "mybackend-limit",
+    "managementLIF": "192.168.0.133",
+    "dataLIF": "192.168.0.131",
+    "svm": "nassvm",
+    "username": "vsadmin",
+    "password": "Netapp1!",
+    "limitAggregateUsage": "80%",
+    "limitVolumeSize": "10Gi",
+    "nfsMountOptions": "nfsvers=4",
+    "defaults": {
+        "spaceReserve": "volume",
+        "snapshotPolicy": "default",
+        "snapshotReserve": "10"
+    }
+}
