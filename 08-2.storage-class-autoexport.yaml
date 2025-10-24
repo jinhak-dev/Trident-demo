@@ -1,0 +1,8 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: mysc-autoexport
+provisioner: csi.trident.netapp.io
+parameters:
+  storagePools: mybackend-autoexport:.*
+allowVolumeExpansion: true
