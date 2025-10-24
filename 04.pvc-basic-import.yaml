@@ -1,9 +1,9 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: mypvcimport
-  namespace: default
+  name: mypvcimport
+  namespace: default
 spec:
-  accessModes:
-    - ReadWriteMany
-  storageClassName: mysc
+  accessModes:
+    - ReadWriteMany
+  storageClassName: mysc
