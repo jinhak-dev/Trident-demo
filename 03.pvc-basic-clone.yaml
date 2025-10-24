@@ -8,7 +8,7 @@ spec:
   storageClassName: mysc
   resources:
     requests:
-      storage: 1Gi
+      storage: 3Gi
   dataSource:
     kind: PersistentVolumeClaim
     name: mypvc
