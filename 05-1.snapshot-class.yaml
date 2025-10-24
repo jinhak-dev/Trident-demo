@@ -1,0 +1,16 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: mypvcimport
+  namespace: default
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: mysc
+[root@rhel3 scripts]# cat 05-1.snapshot-class.yaml
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshotClass
+metadata:
+  name: trident-snapshotclass
+driver: csi.trident.netapp.io
+deletionPolicy: Delete
